@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-navbar.component.scss']
 })
 export class TopNavbarComponent implements OnInit {
-
+username:string='student';
   constructor() { }
 
   ngOnInit() {
   }
-
+logOut(){
+  
+}
 }

@@ -14,13 +14,13 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private accountService: AccountService) {}
 
   ngOnInit() {}
-  login(loginForm: NgForm) {
-    console.log(loginForm);
-    const credentials = {
-      username: loginForm.value.username,
-      password: loginForm.value.password,
-    };
+  // login(loginForm: NgForm) {
+  //   console.log(loginForm);
+  //   const credentials = {
+  //     username: loginForm.value.username,
+  //     password: loginForm.value.password,
+  //   };
 
-    this.accountService.login(credentials);
-  }
+  //   this.accountService.login(credentials);
+  // }
 }
