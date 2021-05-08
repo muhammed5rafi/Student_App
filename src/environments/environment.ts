@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: "https://stagapi.cybasealdm.ga",
+  clientId: "c6e7410194c84694ac92f298f7ca4798",
+  mediaUrl: "https://s3.amazonaws.com/cybaseal.media.dev/",
+  useAmbassador: true,
 };
 
 /*
