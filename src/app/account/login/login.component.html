@@ -1,0 +1,36 @@
+<form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+  <div class="container-fluid">
+    <h2 class="form-signin-heading">Login</h2>
+    <div *ngIf="invalidlogin" class="alert alert-danger">
+      Invalid Username and Password
+    </div>
+    <br />
+    <label for="username" class="sr-only">UserName</label>
+    <input
+      type="text"
+      id="username"
+      ngModel
+      name="username"
+      class="form-control"
+      placeholder="User Name"
+      required
+      autofocus
+    />
+    <br />
+    <label for="password" class="sr-only">Password</label>
+    <input
+      type="password"
+      id="password"
+      ngModel
+      name="password"
+      class="form-control"
+      placeholder="Password"
+      required
+    />
+    <br />
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      Submit
+    </button>
+    <br />
+  </div>
+</form>
